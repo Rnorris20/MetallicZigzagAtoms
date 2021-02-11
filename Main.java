@@ -67,8 +67,9 @@ if (num > 0)
     public static int multiply(int multiply)
   {
     if (num > 0)
-  {
+  }
       return num * multiply(num - 1);
     }else{
       return 0;
+}
 }
