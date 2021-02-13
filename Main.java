@@ -15,6 +15,8 @@ class Main {
     System.out.println(result3);
   }
 
+
+// recursive method statement for addition
 //for example: if i received num = 3 
     //then this method would be 3 + 2 + 1
     //for example: if i received num = 5
@@ -39,13 +41,6 @@ class Main {
     //3 + 3 = 6
     //2 + 1 = 3
     //1 + 0 = 1
-    
-
-  
-
-
-
-// recursive method statement for addition
 public static int sum(int num)
   {
     if(num > 0)
@@ -57,6 +52,20 @@ public static int sum(int num)
   }
 
 // recursive method statement for subtraction
+//for example: if i received subtract = 3 
+    //then this method would be 3 + 2 + 1
+    //for example: if i received subtract = 5
+    //then this method would subtract 5 - 4 - 3 - 2 - 1
+    //10 - sum(9)
+    //9 - sum(8)
+    //8 - sum(7)
+    //7 - sum(6)
+    //6 - sum(5)
+    //5 - sum(4)
+    //4 - sum(3)
+    //3 - sum(2)
+    //2 - sum(1)
+    //1 - sum(0)
 public static int subtraction(int subtract)
   {
 if (subtract > 0)
@@ -68,6 +77,20 @@ if (subtract > 0)
   }
 
 // recursive method statement for division
+//for example: if i received divide = 3 
+    //then this method would be 3 + 2 + 1
+    //for example: if i received divide = 5
+    //then this method would subtract 5 / 4 / 3 / 2 / 1
+    //10 / sum(9)
+    //9 / sum(8)
+    //8 / sum(7)
+    //7 / sum(6)
+    //6 / sum(5)
+    //5 / sum(4)
+    //4 / sum(3)
+    //3 / sum(2)
+    //2 / sum(1)
+    //1 / sum(0)
   public static int division(int divide)
   {
   if (divide > 1)
@@ -79,6 +102,20 @@ if (subtract > 0)
   }
 
 // recursive method statement for multiplication
+//for example: if i received divide = 3 
+    //then this method would be 3 * 2 * 1
+    //for example: if i received multiply = 5
+    //then this method would subtract 5 * 4 * 3 * 2 * 1
+    //10 * sum(9)
+    //9 * sum(8)
+    //8 * sum(7)
+    //7 * sum(6)
+    //6 * sum(5)
+    //5 * sum(4)
+    //4 * sum(3)
+    //3 * sum(2)
+    //2 * sum(1)
+    //1 * sum(0)
   public static int multiplication(int multiply)
   {
   if (multiply > 0)
