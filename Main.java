@@ -5,6 +5,14 @@ class Main {
     int result = sum(10);
     System.out.println(result);
 
+    int result = subtract(10);
+    System.out.println(result);
+
+    int result = divide(10);
+    System.out.println(result);
+
+    int result = multiply(10);
+    System.out.println(result);
 
   }
 //for example: if i received num = 3 
@@ -64,12 +72,13 @@ if (num > 0)
   }
 
 
-    public static int multiply(int multiply)
+  public static int multiply(int multiply)
   {
-    if (num > 0)
+  if (num > 0)
+  {
+     return num * multiply(num - 1);
+  }else{
+    return 0;
+    }
   }
-      return num * multiply(num - 1);
-    }else{
-      return 0;
-}
 }
