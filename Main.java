@@ -5,16 +5,16 @@ class Main {
     int result = sum(10);
     System.out.println(result);
 
-    int result = subtract(10);
-    System.out.println(result);
+    int result1 = subtraction(10);
+    System.out.println(result1);
 
-    int result = divide(10);
-    System.out.println(result);
+    int result2 = division(10);
+    System.out.println(result2);
 
-    int result = multiply(10);
-    System.out.println(result);
-
+    int result3 = multiplication(10);
+    System.out.println(result3);
   }
+
 //for example: if i received num = 3 
     //then this method would be 3 + 2 + 1
     //for example: if i received num = 5
@@ -29,15 +29,6 @@ class Main {
     //3 + sum(2)
     //2 + sum(1)
     //1 + sum(0)
-    
-
-  
-
-public static int sum(int num)
-  {
-    if(num > 0)
-    {
-      return num + sum(num - 1);
     //10 + 45 = 55
     //9 + 36 = 45
     //8 + 28 = 36
@@ -48,35 +39,51 @@ public static int sum(int num)
     //3 + 3 = 6
     //2 + 1 = 3
     //1 + 0 = 1
+    
+
+  
+
+
+
+// recursive method statement for addition
+public static int sum(int num)
+  {
+    if(num > 0)
+    {
+      return num + sum(num - 1);
     }else{
       return 0;
     }
   }
-public static int subtract(int subtract)
+
+// recursive method statement for subtraction
+public static int subtraction(int subtract)
   {
-if (num > 0)
+if (subtract > 0)
   {
-    return num - subtract(num - 1);
+    return subtract - subtraction(subtract - 1);
   }else{
     return 0;
   }
   }
 
-  public static int divide(int divide)
+// recursive method statement for division
+  public static int division(int divide)
   {
-  if (num > 0)
+  if (divide > 1)
   {
-    return num / divide(num - 1);
+      return divide / division(divide - 1);
   }else{
-    return 0;
+      return 1;
+  }
   }
 
-
-  public static int multiply(int multiply)
+// recursive method statement for multiplication
+  public static int multiplication(int multiply)
   {
-  if (num > 0)
+  if (multiply > 0)
   {
-     return num * multiply(num - 1);
+     return multiply * multiplication(multiply - 1);
   }else{
     return 0;
     }
